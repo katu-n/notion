@@ -1,7 +1,7 @@
 // ----------------------- LINE -----------------------------
 function doPost(e) {
   // スクリプトプロパティに格納したLINE Messaging APIのチャネルアクセストークンを取得
-  let Line_token = '8/GbcQJevVfbtMYvyxwhxt6IHU/k29njSuSuWcQvxKCS+EtCOLPP7V42KJrPz7VbeqkK2mayFBONQaEmwNzVQ8fTsxp2pnbbMeBRoT8RBMLuMiLOorS6UnwiHheB38PeMHPnNpPkWzFpC76GpgrFqQdB04t89/1O/w1cDnyilFU=';
+  let Line_token = 'write your LINE token';
 
   // 取得したJSONデータを取得
   let json = JSON.parse(e.postData.contents);
@@ -76,8 +76,8 @@ function doPost(e) {
 function addDataToNotion(splitedMessage) {    // splitedMessageとしてLINEで入力された値が来る
 
   //トークンを取得
-  const dbId = '1a44eba2565b801f82f8d3677a3fa82b';
-  const token = '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'
+  const dbId = 'write your notion databese id';
+  const token = 'write your notion API token'
 
   const apiUrl = 'https://api.notion.com/v1/pages';
   
@@ -160,7 +160,7 @@ function generateObj(dbId, splitedMessage){
 }
 
 //--------------- option function ------------------------
-const sheetId = "1dixhR-Uj21JNPle0aU-9uHn8N9pHWZbhxW8rwmiiOYM";
+const sheetId = "write your sheet Id";
 
 function log(json){
  let logsheet = SpreadsheetApp.openById(sheetId).getSheetByName("log");
